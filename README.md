@@ -1,4 +1,5 @@
-#How to run the robot
+*How to run the robot*
+
 ```
 bin/hubot -a glip
 Or
