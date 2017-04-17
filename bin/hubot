@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+npm install
+export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
+export HUBOT_GLIP_APP_KEY=
+export HUBOT_GLIP_APP_SECRET=
+export HUBOT_GLIP_USERNAME=
+export HUBOT_GLIP_EXTENSION=
+export HUBOT_GLIP_PASSWORD=
+export HUBOT_GLIP_SERVER=https://platform.devtest.ringcentral.com
+
+exec node_modules/.bin/hubot --name "botathon" "$@"
